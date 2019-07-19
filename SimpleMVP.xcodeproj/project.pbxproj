@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		F1E9A8D222E1F57400EC703F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E9A8D122E1F57400EC703F /* AppDelegate.swift */; };
-		F1E9A8D422E1F57400EC703F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E9A8D322E1F57400EC703F /* ViewController.swift */; };
 		F1E9A8D722E1F57400EC703F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E9A8D522E1F57400EC703F /* Main.storyboard */; };
 		F1E9A8D922E1F57600EC703F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E9A8D822E1F57600EC703F /* Assets.xcassets */; };
 		F1E9A8DC22E1F57600EC703F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E9A8DA22E1F57600EC703F /* LaunchScreen.storyboard */; };
 		F1E9A8E722E1F57700EC703F /* SimpleMVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E9A8E622E1F57700EC703F /* SimpleMVPTests.swift */; };
 		F1E9A8F222E1F57700EC703F /* SimpleMVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E9A8F122E1F57700EC703F /* SimpleMVPUITests.swift */; };
+		F1E9A90822E1FBD500EC703F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E9A90722E1FBD500EC703F /* User.swift */; };
+		F1E9A90A22E2037E00EC703F /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E9A90922E2037E00EC703F /* ContactViewController.swift */; };
+		F1E9A90E22E205F500EC703F /* ProviderDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E9A90D22E205F500EC703F /* ProviderDataService.swift */; };
+		F1E9A91022E208F500EC703F /* ContactPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E9A90F22E208F500EC703F /* ContactPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		F1E9A8CE22E1F57400EC703F /* SimpleMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E9A8D122E1F57400EC703F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F1E9A8D322E1F57400EC703F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F1E9A8D622E1F57400EC703F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1E9A8D822E1F57600EC703F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1E9A8DB22E1F57600EC703F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		F1E9A8ED22E1F57700EC703F /* SimpleMVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleMVPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E9A8F122E1F57700EC703F /* SimpleMVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMVPUITests.swift; sourceTree = "<group>"; };
 		F1E9A8F322E1F57700EC703F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1E9A90722E1FBD500EC703F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F1E9A90922E2037E00EC703F /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		F1E9A90D22E205F500EC703F /* ProviderDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderDataService.swift; sourceTree = "<group>"; };
+		F1E9A90F22E208F500EC703F /* ContactPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,11 @@
 		F1E9A8D022E1F57400EC703F /* SimpleMVP */ = {
 			isa = PBXGroup;
 			children = (
-				F1E9A8D122E1F57400EC703F /* AppDelegate.swift */,
-				F1E9A8D322E1F57400EC703F /* ViewController.swift */,
-				F1E9A8D522E1F57400EC703F /* Main.storyboard */,
-				F1E9A8D822E1F57600EC703F /* Assets.xcassets */,
-				F1E9A8DA22E1F57600EC703F /* LaunchScreen.storyboard */,
-				F1E9A8DD22E1F57600EC703F /* Info.plist */,
+				F1E9A90B22E205AE00EC703F /* API */,
+				F1E9A90222E1F5FE00EC703F /* Presenter */,
+				F1E9A90122E1F5EB00EC703F /* View */,
+				F1E9A90022E1F5D900EC703F /* Model */,
+				F1E9A8FF22E1F59F00EC703F /* SupportingFiles */,
 			);
 			path = SimpleMVP;
 			sourceTree = "<group>";
@@ -123,6 +128,58 @@
 				F1E9A8F322E1F57700EC703F /* Info.plist */,
 			);
 			path = SimpleMVPUITests;
+			sourceTree = "<group>";
+		};
+		F1E9A8FF22E1F59F00EC703F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F1E9A8D122E1F57400EC703F /* AppDelegate.swift */,
+				F1E9A8D822E1F57600EC703F /* Assets.xcassets */,
+				F1E9A8DD22E1F57600EC703F /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F1E9A90022E1F5D900EC703F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1E9A90722E1FBD500EC703F /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1E9A90122E1F5EB00EC703F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1E9A8D522E1F57400EC703F /* Main.storyboard */,
+				F1E9A8DA22E1F57600EC703F /* LaunchScreen.storyboard */,
+				F1E9A90922E2037E00EC703F /* ContactViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F1E9A90222E1F5FE00EC703F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F1E9A90F22E208F500EC703F /* ContactPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F1E9A90B22E205AE00EC703F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F1E9A90C22E205C100EC703F /* DataProvider */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F1E9A90C22E205C100EC703F /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				F1E9A90D22E205F500EC703F /* ProviderDataService.swift */,
+			);
+			path = DataProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +313,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1E9A8D422E1F57400EC703F /* ViewController.swift in Sources */,
 				F1E9A8D222E1F57400EC703F /* AppDelegate.swift in Sources */,
+				F1E9A90822E1FBD500EC703F /* User.swift in Sources */,
+				F1E9A91022E208F500EC703F /* ContactPresenter.swift in Sources */,
+				F1E9A90A22E2037E00EC703F /* ContactViewController.swift in Sources */,
+				F1E9A90E22E205F500EC703F /* ProviderDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +494,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64L8Y7FW54;
-				INFOPLIST_FILE = SimpleMVP/Info.plist;
+				INFOPLIST_FILE = SimpleMVP/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +512,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64L8Y7FW54;
-				INFOPLIST_FILE = SimpleMVP/Info.plist;
+				INFOPLIST_FILE = SimpleMVP/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

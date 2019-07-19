@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IQP-m4-lcc">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contact View Controller-->
+        <scene sceneID="ua4-LB-eED">
+            <objects>
+                <viewController id="IQP-m4-lcc" customClass="ContactViewController" customModule="SimpleMVP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ut8-bG-DBH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qGK-ar-Wg6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="758"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Xjx-FO-YNb">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xjx-FO-YNb" id="kSU-7m-RYb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peh-gl-uap">
+                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="78a-N1-EMX"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="User Details">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name=".SFNSText"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dvO-OA-e8Q" firstAttribute="trailing" secondItem="peh-gl-uap" secondAttribute="trailing" id="1BG-Mj-bxT"/>
+                            <constraint firstItem="qGK-ar-Wg6" firstAttribute="leading" secondItem="dvO-OA-e8Q" secondAttribute="leading" id="84Y-bl-Wl8"/>
+                            <constraint firstItem="peh-gl-uap" firstAttribute="top" secondItem="qGK-ar-Wg6" secondAttribute="bottom" id="ED1-7C-Fjg"/>
+                            <constraint firstItem="dvO-OA-e8Q" firstAttribute="trailing" secondItem="qGK-ar-Wg6" secondAttribute="trailing" id="Jn0-pE-XER"/>
+                            <constraint firstItem="dvO-OA-e8Q" firstAttribute="bottom" secondItem="peh-gl-uap" secondAttribute="bottom" id="ZWt-u5-AOo"/>
+                            <constraint firstItem="peh-gl-uap" firstAttribute="leading" secondItem="dvO-OA-e8Q" secondAttribute="leading" id="ijR-tn-v1E"/>
+                            <constraint firstItem="qGK-ar-Wg6" firstAttribute="top" secondItem="dvO-OA-e8Q" secondAttribute="top" id="vua-sc-lzy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dvO-OA-e8Q"/>
+                    </view>
+                    <connections>
+                        <outlet property="diplayLabel" destination="peh-gl-uap" id="1fd-ih-GOE"/>
+                        <outlet property="tableView" destination="qGK-ar-Wg6" id="FZQ-Fx-Jsp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FgK-zw-phH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-604.34782608695662" y="-109.15178571428571"/>
+        </scene>
+    </scenes>
+</document>
